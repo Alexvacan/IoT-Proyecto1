@@ -20,8 +20,11 @@ class LEDController {
         } else if (distance < DISTANCE_THRESHOLD_MEDIUM) {
           redLED.turnOn();
           greenLED.turnOn();
+          yellowLED.turnOff();
         } else if (distance < DISTANCE_THRESHOLD_LONG) {
-          redLED.turnOn();
+          redLED.turnOff();
+          greenLED.turnOn();
+          yellowLED.turnOff();
         } else {
           turnOffAll();
         }

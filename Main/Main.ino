@@ -26,6 +26,4 @@ void loop() {
   ledController.controlLEDs(distance);
 
   delay(500);
-  ledController.turnOffAll();
-  delay(200);
 }
